@@ -7,6 +7,8 @@ namespace Deck
 {
     public abstract class NumericalDeck
     {
+        protected readonly Random random = new Random();
+
         public IDictionary<StandardSuit, IList<int>> MyDeck = new Dictionary<StandardSuit, IList<int>>()
         {
             { StandardSuit.Clubs, Enumerable.Range(1, 13).Select(x => x).ToList() },

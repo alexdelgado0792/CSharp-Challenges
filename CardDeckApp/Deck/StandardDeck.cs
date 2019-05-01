@@ -15,8 +15,6 @@ namespace Deck
             { StandardSuit.Spades, new List<int>() }
         };
 
-        private readonly Random random = new Random();
-
         public override void Draw()
         {
             var suit = (StandardSuit)random.Next(0, 4);
